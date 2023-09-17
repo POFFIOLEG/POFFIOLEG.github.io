@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="part1">
+      <h1>Персональный сайт Мирошниченко Олега</h1>
+      <p style="color: #d615ac; font-size: 30px">Задание 1</p>
+    </div>
+
+    <ul>
+      <li>Список ссылок</li>
+      <li>
+        <a href="http://www.kubsu.ru/"
+          >абсолютная гиперссылка на главную страницу сайта kubsu.ru</a
+        >
+        <p></p>
+      </li>
+      <li>
+        <a href="https://www.kubsu.ru/">
+          абсолютная гиперссылка на главную страницу сайта kubsu.ru в протоколе
+          https</a
+        >
+      </li>
+      <li>
+        <a id="photo" href="https://www.kubsu.ru/">
+          <img src="rt.jpg" width="50" height="50" alt=""
+        /></a>
+      </li>
+      <li>
+        <a href="/web1.html"> сокращенная ссылка на внутреннюю страницу</a>
+      </li>
+      <li>
+        <a href="/"> сокращенная ссылка на главную страницу</a>
+      </li>
+      <li><a href="#photo">Назад</a></li>
+      <li>
+        <a href="https://www.google.com/?a=kubsu&b=kubsu&c=kubsu">
+          ссылка с тремя параметрами в URL</a
+        >
+      </li>
+      <li>
+        <a href="http://google.com?id=part1">ссылку с параметром id в URL</a>
+      </li>
+      <li>
+        <a href="./index.html"> относительную на страницу в текущем каталоге</a>
+      </li>
+      <li>
+        <a href="./about/index2.html">
+          относительную на страницу в каталоге about</a
+        >
+      </li>
+      <li>
+        <a href="../web.html">
+          относительную на страницу в каталоге уровнем выше текущего</a
+        >
+      </li>
+      <li>
+        <a href="../../web1.html">
+          относительную на страницу в каталоге двумя уровнями выше</a
+        >
+      </li>
+    </ul>
+
+    <p>
+      Если человек тебе сделал зло, дай ему конфетку. Он тебе - зло, ты ему -
+      конфетку. И так до тех пор, пока у этой твари не разовьется
+      <a href="https://ru.wikipedia.org/wiki/Сахарный_диабет"
+        >сахарный диабет.</a
+      >
+    </p>
+    <ul>
+      <li>
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%94%D1%83%D0%BB%D0%BE%D0%B2%D0%BE"
+          >ссылку на фрагмент страницы стороннего сайта</a
+        >
+      </li>
+
+      <li>
+        <map name="test">
+          <area
+            shape="rect"
+            coords="25,25,125,125"
+            href="https://memchik.ru/show/5b0404cfb1c7e302424e5be7?page=5"
+            target="_blank"
+            alt="HTML"
+          />
+        </map>
+        <img usemap="#test" src="rt.jpg" width="350" height="150" alt="" />
+      </li>
+
+      <li>
+        <map name="test">
+          <area
+            shape="circle"
+            coords="25,25,5"
+            href="https://memchik.ru/show/5b0404cfb1c7e302424e5be7?page=5"
+            target="_blank"
+            alt="HTML"
+          />
+        </map>
+        <img usemap="#test" src="rt.jpg" width="350" height="150" alt="" />
+      </li>
+      <li>
+        <a href="">Пустая ссылка</a>
+      </li>
+      <li><a title="ссылка без href">Ссылка без href</a></li>
+      <li>
+        <a href="https://ru.wikipedia.org/wiki/Гурзуф" rel="nofollow">
+          по которой запрещен переходпоисковикам</a
+        >
+      </li>
+    </ul>
+
+    <a href="http://google.com" rel="nofollow"
+      ><!--noindex-->Запрещен для индексации поисковикам<!--/noindex--></a
+    >
+
+    <ul>
+      <li>
+        Навигация Wikipedia
+        <ol>
+          <li>
+            <a
+              href="https://ru.wikipedia.org/wiki/Заглавная_страница"
+              title="Заглавная 
+    страница"
+              >Заглавная страница</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://ru.wikipedia.org/wiki/Википедия:Поиск_по_категориям"
+              title="Рубрикация"
+              >Рубрикация</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://ru.wikipedia.org/wiki/Википедия:Алфавитный_указатель"
+              title="Указатель А-
+    Я"
+              >Указатель А-Я</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://ru.wikipedia.org/wiki/Википедия:Избранные_статьи"
+              title="Избранные 
+    статьи"
+              >Избранные статьи</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://ru.wikipedia.org/wiki/Портал:Текущие_события"
+              title="Текущие 
+    события"
+              >Текущие события</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://ru.wikipedia.org/wiki/Википедия:Форум"
+              title="Форум"
+              >Форум</a
+            >
+          </li>
+        </ol>
+      </li>
+    </ul>
+
+    <a href="ftp://oleg:12345678@poffi.net/proverka/log.txt">
+      ссылку на файл на сервере FTP с авторизацией</a
+    >
+
+    <form action="/" method="POST">
+      <label>
+        Фамилия Имя Отчество:<br />
+        <input
+          name="field-name-1"
+          value="Мирошниченко Олег Владимирович"
+        /> </label
+      ><br />
+
+      <label>
+        Телефон:<br />
+        <input
+          name="field-tel"
+          type="tel"
+          placeholder="Введите ваш номер"
+        /> </label
+      ><br />
+
+      <label>
+        E-mail:<br />
+        <input
+          name="field-email"
+          type="email"
+          placeholder="Введите ваш E-mail"
+        /> </label
+      ><br />
+
+      <label>
+        Дата рождения:<br />
+        <input name="field-date" value="2004-07-14" type="date" /> </label
+      ><br />
+
+      Пол:<br />
+      <label
+        ><input
+          type="radio"
+          checked="checked"
+          name="radio-group-1"
+          value="Значение1"
+        />
+        Мужской</label
+      >
+      <label
+        ><input type="radio" name="radio-group-1" value="Значение2" />
+        Женский</label
+      ><br />
+      <label> Любимый язык программирования:</label>
+      <br />
+      <select name="field-name-4[]" multiple="multiple">
+        <option value="Значение1">Pascal</option>
+        <option value="Значение2" selected="selected">C</option>
+        <option value="Значение3" selected="selected">C++</option>
+        <option value="Значение4" selected="selected">JavaScript</option>
+        <option value="Значение5" selected="selected">PHP</option>
+        <option value="Значение6" selected="selected">Python</option>
+        <option value="Значение7" selected="selected">Java</option>
+        <option value="Значение8" selected="selected">Haskel</option>
+        <option value="Значение9" selected="selected">Clojure</option>
+        <option value="Значение10" selected="selected">Prolog</option>
+        <option value="Значение11" selected="selected">Scala</option>
+      </select>
+      <br />
+      <label>
+        Биография:<br />
+        <textarea name="field-name-2">Писать здесь</textarea></label
+      ><br />
+      С контрактом:<br />
+      <label
+        ><input type="checkbox" checked="checked" name="check-1" /> ознакомлен
+        (а)</label
+      ><br />
+      <input type="submit" value="Сохранить" />
+    </form>
+  </body>
+</html>
