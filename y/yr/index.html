@@ -86,15 +86,13 @@
           <area
             shape="rect"
             coords="25,25,125,125"
+            shape="circle"
+            coords="25,25,5"
             href="https://memchik.ru/show/5b0404cfb1c7e302424e5be7?page=5"
             target="_blank"
             alt="HTML"
           />
         </map>
-        <img usemap="#test" src="rt.jpg" width="350" height="150" alt="" />
-      </li>
-
-      <li>
         <map name="test">
           <area
             shape="circle"
@@ -178,13 +176,14 @@
     <a href="ftp://oleg:12345678@poffi.net/proverka/log.txt">
       ссылку на файл на сервере FTP с авторизацией</a
     >
-
+    <p>Форма</p>
     <form action="/" method="POST">
       <label>
         Фамилия Имя Отчество:<br />
         <input
           name="field-name-1"
-          value="Мирошниченко Олег Владимирович"
+          placeholder="Введите ФИО"
+          required="required"
         /> </label
       ><br />
 
@@ -194,6 +193,7 @@
           name="field-tel"
           type="tel"
           placeholder="Введите ваш номер"
+          required="required"
         /> </label
       ><br />
 
@@ -203,12 +203,18 @@
           name="field-email"
           type="email"
           placeholder="Введите ваш E-mail"
+          required="required"
         /> </label
       ><br />
 
       <label>
         Дата рождения:<br />
-        <input name="field-date" value="2004-07-14" type="date" /> </label
+        <input
+          name="field-date"
+          value="none"
+          type="date"
+          required="required"
+        /> </label
       ><br />
 
       Пол:<br />
@@ -218,37 +224,52 @@
           checked="checked"
           name="radio-group-1"
           value="Значение1"
+          required="required"
         />
         Мужской</label
       >
       <label
-        ><input type="radio" name="radio-group-1" value="Значение2" />
+        ><input
+          type="radio"
+          name="radio-group-1"
+          value="Значение2"
+          required="required"
+        />
         Женский</label
       ><br />
       <label> Любимый язык программирования:</label>
       <br />
-      <select name="field-name-4[]" multiple="multiple">
+      <select name="field-name-4[]" multiple="multiple" required="required">
         <option value="Значение1">Pascal</option>
-        <option value="Значение2" selected="selected">C</option>
-        <option value="Значение3" selected="selected">C++</option>
-        <option value="Значение4" selected="selected">JavaScript</option>
-        <option value="Значение5" selected="selected">PHP</option>
-        <option value="Значение6" selected="selected">Python</option>
-        <option value="Значение7" selected="selected">Java</option>
-        <option value="Значение8" selected="selected">Haskel</option>
-        <option value="Значение9" selected="selected">Clojure</option>
-        <option value="Значение10" selected="selected">Prolog</option>
-        <option value="Значение11" selected="selected">Scala</option>
+        <option value="Значение2">C</option>
+        <option value="Значение3">C++</option>
+        <option value="Значение4">JavaScript</option>
+        <option value="Значение5">PHP</option>
+        <option value="Значение6">Python</option>
+        <option value="Значение7">Java</option>
+        <option value="Значение8">Haskel</option>
+        <option value="Значение9">Clojure</option>
+        <option value="Значение10">Prolog</option>
+        <option value="Значение11">Scala</option>
       </select>
       <br />
       <label>
         Биография:<br />
-        <textarea name="field-name-2">Писать здесь</textarea></label
+        <textarea
+          name="field-name-2"
+          placeholder="Напишите о себе"
+          required="required"
+        ></textarea></label
       ><br />
       С контрактом:<br />
       <label
-        ><input type="checkbox" checked="checked" name="check-1" /> ознакомлен
-        (а)</label
+        ><input
+          type="checkbox"
+          checked="checked"
+          name="check-1"
+          required="required"
+        />
+        ознакомлен (а)</label
       ><br />
       <input type="submit" value="Сохранить" />
     </form>
